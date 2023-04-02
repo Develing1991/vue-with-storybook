@@ -9,7 +9,7 @@ import "./assets/main.css";
 const app = createApp(App);
 
 app.use(StoryblokVue, {
-  accessToken: import.meta.env.VITE_STORU_BOOK_KEY,
+  accessToken: import.meta.env.VITE_STORY_BOOK_KEY,
   bridge: process.env.NODE_ENV !== "production", // optimizes by excluding the bridge on production
   use: [apiPlugin],
 });
